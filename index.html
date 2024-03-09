@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
 
-<title>Gatas do Adriel</title>
+<head>
 
-<meta charset="utf-8">
+    <title>Gatas do Adriel</title>
 
-<style>
-body {
-background-color: #faf0e6
-}
-</style>
+    <meta charset="utf-8">
 
-    </head>
+    <style>
+        body {
+            text-align: center;
+            background-color: #faf0e6
+        }
 
-    <body>
-        <main>
-            <section>
-                <h1>1ºGata: Tica</h1>
-                <img src="https://private-user-images.githubusercontent.com/92604103/310940276-04ce0ccc-1da7-41d5-8ad2-8bd14f5ca7d6.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk5MzkwNzIsIm5iZiI6MTcwOTkzODc3MiwicGF0aCI6Ii85MjYwNDEwMy8zMTA5NDAyNzYtMDRjZTBjY2MtMWRhNy00MWQ1LThhZDItOGJkMTRmNWNhN2Q2LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA4VDIyNTkzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWIyMzIyYTg0NTRlNTVmMTU4YmI1ZmFlODEyYzI5NTBjNjM4NTIzMzMwYWZlZDM3Mzk1NTBlMjc1OGQ3MzUxMTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ADW18We8lAo7HIp2plEopgDF2c2kPD84tsOaByu5eoQ" alt="Imagem da primeira gata do Adriel, cujo nome é Tica">
-                <figcaption><em>A mais velha</em></figcaption>
-            </section>
+        .cat-dimension {
+            height: 300px;
+            width: 250px;
+            border-radius: 25%;
+        }
+    </style>
 
-            <section>
-                <h2>2ºGata: Lica</h2>
-                <img src="https://private-user-images.githubusercontent.com/92604103/310940516-82ad8798-ee7c-403e-8eca-887dd47cde26.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk5MzkxNzAsIm5iZiI6MTcwOTkzODg3MCwicGF0aCI6Ii85MjYwNDEwMy8zMTA5NDA1MTYtODJhZDg3OTgtZWU3Yy00MDNlLThlY2EtODg3ZGQ0N2NkZTI2LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA4VDIzMDExMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE0ZTBmM2MxNzA2ZDEwY2Y0Y2RlYTFiNzU0N2I5YTVhMDdkNmMxM2JmZWNmMjIyZWJiZWYxYzAzNjg0YWFiMDImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.k56uBgVNNfpD_9ggtN38RN4he9OgIC6o7R7xxOelNk0" alt="Imagem da segunda gata do Adriel, cujo nome é Lica">
-                <figcaption><em>A do meio</em></figcaption>
-            </section>
+</head>
 
-            <section>
-                <h3>3ºGata: Nina</h3>
-                <img src="https://private-user-images.githubusercontent.com/92604103/310940707-06c44cbc-32df-4df5-9931-1f044f402191.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk5MzkxOTMsIm5iZiI6MTcwOTkzODg5MywicGF0aCI6Ii85MjYwNDEwMy8zMTA5NDA3MDctMDZjNDRjYmMtMzJkZi00ZGY1LTk5MzEtMWYwNDRmNDAyMTkxLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA4VDIzMDEzM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTJiM2JiODIxOTA0ZTI1NjE4NjQ2N2QyNTE0NzYyODU0OGE2OTMwY2U1Nzk2MDBlYTA4MDA4N2IzNzllMzYzZGQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.g85hTJ-JctN08U4ZJ7gwC4XrXB4vbwXvNzAZ7qiZNQs" alt="Imagem da terceira gata do Adriel, cujo nome é Nina">
-                <figcaption><em>A gatinha mais nova</em></figcaption>
-            </section>
+<body>
+    <main>
+        <section>
+            <h1>Gatas do Adriel</h1>
+            <h3>1ºGata: Tica</h3>
+            <img class="cat-dimension"
+                src="https://private-user-images.githubusercontent.com/92604103/310940276-04ce0ccc-1da7-41d5-8ad2-8bd14f5ca7d6.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk5MzkwNzIsIm5iZiI6MTcwOTkzODc3MiwicGF0aCI6Ii85MjYwNDEwMy8zMTA5NDAyNzYtMDRjZTBjY2MtMWRhNy00MWQ1LThhZDItOGJkMTRmNWNhN2Q2LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA4VDIyNTkzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWIyMzIyYTg0NTRlNTVmMTU4YmI1ZmFlODEyYzI5NTBjNjM4NTIzMzMwYWZlZDM3Mzk1NTBlMjc1OGQ3MzUxMTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ADW18We8lAo7HIp2plEopgDF2c2kPD84tsOaByu5eoQ"
+                alt="Imagem da primeira gata do Adriel, cujo nome é Tica">
+            <figcaption><em>A mais velha</em></figcaption>
+        </section>
 
-            <section>
-                <h4>Quiz das gatinhas</h4>
-                <fieldset>
-                    <legend>Qual a gatinha mais linda e fofa ?</legend>
-                    <input id="Tica" type="checkbox" name="linda e fofa" value="Tica"> <label for="Tica">Tica</label>
-                    <input id="Lica" type="checkbox" name="linda e fofa" value="Lica"> <label for="Lica">Lica</label>
-                    <input id="Nina" type="checkbox" name="linda e fofa" value="Nina"> <label for="Nina">Nina</label>
-                    <p>Obs.:Você poderá decidir que todas elas são lindas e fofas!</p>
-                </fieldset>
-            </section>
-        </main>
+        <section>
+            <h3>2ºGata: Lica</h3>
+            <img class="cat-dimension"
+                src="https://private-user-images.githubusercontent.com/92604103/310940516-82ad8798-ee7c-403e-8eca-887dd47cde26.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk5MzkxNzAsIm5iZiI6MTcwOTkzODg3MCwicGF0aCI6Ii85MjYwNDEwMy8zMTA5NDA1MTYtODJhZDg3OTgtZWU3Yy00MDNlLThlY2EtODg3ZGQ0N2NkZTI2LmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA4VDIzMDExMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE0ZTBmM2MxNzA2ZDEwY2Y0Y2RlYTFiNzU0N2I5YTVhMDdkNmMxM2JmZWNmMjIyZWJiZWYxYzAzNjg0YWFiMDImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.k56uBgVNNfpD_9ggtN38RN4he9OgIC6o7R7xxOelNk0"
+                alt="Imagem da segunda gata do Adriel, cujo nome é Lica">
+            <figcaption><em>A do meio</em></figcaption>
+        </section>
 
-        <footer>
-            <p>
-               <em> Realizado por -</em><a href="https://github.com/drizwhy">https://github.com/drizwhy</a>
-            </p>
-        </footer>
+        <section>
+            <h3>3ºGata: Nina</h3>
+            <img class="cat-dimension"
+                src="https://private-user-images.githubusercontent.com/92604103/310940707-06c44cbc-32df-4df5-9931-1f044f402191.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk5MzkxOTMsIm5iZiI6MTcwOTkzODg5MywicGF0aCI6Ii85MjYwNDEwMy8zMTA5NDA3MDctMDZjNDRjYmMtMzJkZi00ZGY1LTk5MzEtMWYwNDRmNDAyMTkxLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzA4VDIzMDEzM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTJiM2JiODIxOTA0ZTI1NjE4NjQ2N2QyNTE0NzYyODU0OGE2OTMwY2U1Nzk2MDBlYTA4MDA4N2IzNzllMzYzZGQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.g85hTJ-JctN08U4ZJ7gwC4XrXB4vbwXvNzAZ7qiZNQs"
+                alt="Imagem da terceira gata do Adriel, cujo nome é Nina">
+            <figcaption><em>A gatinha mais nova</em></figcaption>
+        </section>
 
-    </body>
+        <section>
+            <h3>Quiz das gatinhas</h3>
+            <fieldset>
+                <legend>Qual a gatinha mais linda e fofa ?</legend>
+                <input id="Tica" type="checkbox" name="linda e fofa" value="Tica"> <label for="Tica">Tica</label>
+                <input id="Lica" type="checkbox" name="linda e fofa" value="Lica"> <label for="Lica">Lica</label>
+                <input id="Nina" type="checkbox" name="linda e fofa" value="Nina"> <label for="Nina">Nina</label>
+                <p>Obs.:Você poderá decidir que todas elas são lindas e fofas!</p>
+            </fieldset>
+        </section>
+    </main>
 
-    </html>
+    <footer>
+        <p>
+            <em> Realizado por -</em><a href="https://github.com/drizwhy">https://github.com/drizwhy</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
